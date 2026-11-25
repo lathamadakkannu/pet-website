@@ -1,0 +1,240 @@
+.petDetails {
+  color: var(--ui-ink, #292e30);
+}
+
+:global(#site-content) .petDetails :global(.petDetailsContainer) {
+  width: 100%;
+  max-width: 100%;
+}
+
+:global(#site-content) .petDetails :global(.petDetailsContent) {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+  align-items: start;
+  gap: clamp(20px, 3vw, 36px);
+  padding: 0;
+}
+
+:global(#site-content) .petDetails :global(.petDetailsContent > .detailsSection),
+:global(#site-content) .petDetails :global(.petDetailsContent > .detailsSection1) {
+  width: auto;
+  min-width: 0;
+}
+
+:global(#site-content) .petDetails :global(.detailsSection > .detailsSectionContent) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+:global(#site-content) .petDetails :global(.detailsImgSection2) {
+  height: clamp(320px, 36vw, 440px);
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--ui-border, #e9e1d9);
+  border-radius: 18px;
+  background: #f5f2ee;
+}
+
+:global(#site-content) .petDetails :global(.detailsImgSection2 img) {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: cover;
+}
+
+:global(#site-content) .petDetails :global(.detailsImgSection2--contain img) {
+  padding: 18px;
+  object-fit: contain;
+}
+
+:global(#site-content) .petDetails :global(.addCard),
+:global(#site-content) .petDetails :global(.detailsSection1) {
+  border: 1px solid var(--ui-border, #e9e1d9);
+  border-radius: var(--ui-radius, 18px);
+  background: var(--ui-surface, #fff);
+  box-shadow: 0 8px 26px rgb(65 47 33 / 6%);
+}
+
+:global(#site-content) .petDetails :global(.addCard) {
+  width: 100%;
+  align-items: stretch;
+  margin: 18px 0 0;
+  padding: clamp(16px, 2vw, 24px);
+}
+
+:global(#site-content) .petDetails :global(.description) {
+  width: 100%;
+}
+
+:global(#site-content) .petDetails :global(.detailsSection1) {
+  padding: clamp(20px, 3vw, 32px);
+}
+
+:global(#site-content) .petDetails :global(.detailsSectionHead) {
+  align-items: flex-start;
+}
+
+:global(#site-content) .petDetails :global(.detailsHead h2) {
+  margin: 0;
+  color: var(--ui-ink, #292e30);
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+  line-height: 1.2;
+}
+
+:global(#site-content) .petDetails :global(.rating) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+}
+
+:global(#site-content) .petDetails :global(.detailsSectionContent h2) {
+  font-size: 1.8rem;
+}
+
+:global(#site-content) .petDetails :global(.petContent p) {
+  margin: 16px 0;
+  line-height: 1.7;
+}
+
+:global(#site-content) .petDetails :global(.petContent h2) {
+  line-height: 1.45;
+}
+
+:global(#site-content) .petDetails :global(.petFeature) {
+  margin-top: 24px;
+}
+
+:global(#site-content) .petDetails :global(.petFeatureHead h2) {
+  color: var(--ui-ink, #292e30);
+  line-height: 1.35;
+}
+
+:global(#site-content) .petDetails :global(.petFeatureList ul) {
+  padding-left: 1.2rem;
+}
+
+:global(#site-content) .petDetails :global(.reviewContainer) {
+  margin-top: 36px;
+  padding: clamp(20px, 3vw, 32px);
+  border: 1px solid var(--ui-border, #e9e1d9);
+  border-radius: var(--ui-radius, 18px);
+  background: var(--ui-surface, #fff);
+}
+
+:global(#site-content) .petDetails :global(.reviewHeading) {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+:global(#site-content) .petDetails :global(.reviewEyebrow) {
+  color: var(--ui-accent-dark, #805d43);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+:global(#site-content) .petDetails :global(.reviewHeading h3) {
+  margin: 4px 0 0;
+  color: var(--ui-ink, #292e30);
+  font-size: 1.35rem;
+}
+
+:global(#site-content) .petDetails :global(.reviewAverage) {
+  color: var(--ui-muted, #74695f);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+:global(#site-content) .petDetails :global(.reviewCard) {
+  padding: 18px 0;
+  border-top: 1px solid var(--ui-border, #e9e1d9);
+}
+
+:global(#site-content) .petDetails :global(.reviewCardHeading),
+:global(#site-content) .petDetails :global(.reviewAuthor) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+:global(#site-content) .petDetails :global(.reviewAuthor) {
+  justify-content: flex-start;
+}
+
+:global(#site-content) .petDetails :global(.reviewAvatar) {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  border-radius: 50%;
+  background: #f2e8de;
+  color: var(--ui-accent-dark, #805d43);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+:global(#site-content) .petDetails :global(.reviewAuthor h4) {
+  margin: 0;
+  color: var(--ui-ink, #292e30);
+  font-size: 0.95rem;
+}
+
+:global(#site-content) .petDetails :global(.reviewAuthor time) {
+  color: var(--ui-muted, #74695f);
+  font-size: 0.78rem;
+}
+
+:global(#site-content) .petDetails :global(.reviewStars) {
+  display: flex;
+  flex: 0 0 auto;
+  color: #d89634;
+}
+
+:global(#site-content) .petDetails :global(.reviewData) {
+  margin: 12px 0 0;
+  color: var(--ui-muted, #74695f);
+  line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+  :global(#site-content) .petDetails :global(.petDetailsContent) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  :global(#site-content) .petDetails :global(.detailsSection1) {
+    order: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  :global(#site-content) .petDetails :global(.detailsSection > .detailsSectionContent) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  :global(#site-content) .petDetails :global(.detailsImgSection2) {
+    height: clamp(270px, 85vw, 360px);
+  }
+
+  :global(#site-content) .petDetails :global(.reviewHeading) {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  :global(#site-content) .petDetails :global(.reviewCardHeading) {
+    align-items: flex-start;
+  }
+
+  :global(#site-content) .petDetails :global(.reviewStars) {
+    gap: 1px;
+    font-size: 0.85rem;
+  }
+}

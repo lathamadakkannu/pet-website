@@ -1,0 +1,29 @@
+.backButton {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 0 14px;
+  border: 1px solid var(--ui-border, #e9e1d9);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ui-ink, #292e30);
+  text-decoration: none;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  transition: border-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.backButton:hover {
+  transform: translateX(-2px);
+  border-color: var(--ui-accent, #c18b68);
+  color: var(--ui-accent-dark, #8b5a3c);
+}
+
+.backButton:focus-visible {
+  outline: 2px solid var(--ui-accent, #c18b68);
+  outline-offset: 3px;
+}
